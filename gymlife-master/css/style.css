@@ -828,7 +828,7 @@ ol {
 }
 
 .ps-item .pi-price h2 {
-	font-size: 60px;
+	font-size: 50px;
 	color: #f36100;
 	font-weight: 600;
 }
@@ -1172,6 +1172,34 @@ ol {
 	margin-bottom: 18px;
 }
 
+/* FIX pricing cut issue */
+.pricing-section {
+    overflow: visible !important;
+}
+
+/* Arrow styling */
+.pricing-carousel .owl-nav button {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    /* background: #e31c25 !important; */
+    background: #fd7e14 !important;
+    color: #fff !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+.pricing-carousel .owl-nav .owl-prev {
+    left: -45px;
+}
+
+.pricing-carousel .owl-nav .owl-next {
+    right: -45px;
+}
+
 .fs-widget ul li {
 	list-style: none;
 }
@@ -1369,6 +1397,7 @@ ol {
 .ts_slider.owl-carousel .owl-item img {
 	display: inline-block;
 }
+
 
 .ts_slider.owl-carousel .owl-nav button {
 	height: 46px;
@@ -2021,13 +2050,13 @@ ol {
 
 .chart-calculate-form form input {
 	font-size: 14px;
-	color: #c4c4c4;
+	color: #fafcff;
 	width: 100%;
 	height: 50px;
 	border: 1px solid #363636;
 	padding-left: 20px;
 	padding-right: 5px;
-	background: transparent;
+	background: #16181b;
 	margin-bottom: 20px;
 }
 
@@ -3254,4 +3283,109 @@ ol {
 	.search-model-form input {
 		font-size: 28px;
 	}
+}
+
+.bmi-result-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(30,144,255,0.10);
+    padding: 36px 28px 30px 28px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    max-width: 350px;
+    animation: fadeIn .5s cubic-bezier(.4,0,.2,1);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+.bmi-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    margin-top: 10px;
+}
+.bmi-value {
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin: 10px 0 18px 0;
+}
+.bmi-status {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.status-icon {
+    font-size: 1.8rem;
+    vertical-align: middle;
+}
+.status-icon.healthy { color: #19b47d; }
+.status-icon.underweight { color: #1e90ff; }
+.status-icon.overweight { color: #ff9500; }
+.status-icon.obese { color: #e74c3c; }
+.recalculate-btn,
+.bmi-btn {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255,102,0,0.13);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.recalculate-btn:hover,
+.bmi-btn:hover {
+    background: #e05500;
+    box-shadow: 0 4px 16px rgba(255,102,0,0.18);
+}
+.bmi-error {
+    color: #e74c3c;
+    background: #fdeaea;
+    border: 1px solid #f6b1b1;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: none;
+}
+.bmi-sex-select {
+    width: 100%;
+    padding: 11px 10px;
+    margin-bottom: 16px;
+    border-radius: 7px;
+    border: 1px solid #363636;
+    background:#16181b;
+    font-size: 1.04rem;
+    color:  #fafcff;
+}
+.bmi-sex-select:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+.chart-calculate-form input[type="text"] {
+    border-radius: 7px;
+    border: 1px solid #363636;
+    background: #16181b;
+    padding: 12px 14px;
+    font-size: 1.04rem;
+    margin-bottom: 16px;
+    width: 100%;
+    /* transition: border-color 0.2s; */
+    color: #fafcff;
+}
+
+
+
+.chart-calculate-form input[type="text"]:focus {
+    border-color: #1e90ff;
+    outline: none;
 }

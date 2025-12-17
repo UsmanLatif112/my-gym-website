@@ -10,6 +10,8 @@
     <title>My Gym | Shape it up</title>
 
     <!-- Google Font -->
+     <link rel="icon" type="image/png" href="logo3.png">
+
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
 
@@ -30,7 +32,7 @@
         <div class="loader"></div>
     </div>
 
-    <!-- Offcanvas Menu Section Begin -->
+     <!-- Offcanvas Menu Section Begin -->
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="canvas-close">
@@ -41,15 +43,16 @@
         </div>
         <nav class="canvas-menu mobile-menu">
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li class="active"><a href="./home.html">Home</a></li>
                 <li><a href="./about-us.html">About Us</a></li>
                 <li><a href="./services.html">Services</a></li>
-                <li><a href="./team.html">Our Team</a></li>
+                <li><a href="./bmi-calculator.html">BMI Calculator</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
         <div class="canvas-social">
+            <a href="https://www.facebook.com/mygymlahore/"><i class="fa fa-facebook"></i></a>
             <a href="https://www.instagram.com/mygymlahore/"><i class="fa fa-instagram"></i></a>
             <a href="https://wa.me/923344441455"><i class="fa fa-whatsapp"></i></a>
             <a href="https://share.google/Ibi9AdcoL574vHIql"><i class="fa fa-map-marker"></i></a>
@@ -64,7 +67,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="logo">
-                        <a href="./index.html">
+                        <a href="./home.html">
                             <img src="img/logo3.png" alt="">
                         </a>
                     </div>
@@ -72,10 +75,10 @@
                 <div class="col-lg-6">
                     <nav class="nav-menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li class="active"><a href="./home.html">Home</a></li>
                             <li><a href="./about-us.html">About Us</a></li>
                             <li><a href="./services.html">Services</a></li>
-                            <li><a href="./team.html">Our Team</a></li>
+                            <li><a href="./bmi-calculator.html">BMI Calculator</a></li>
                             <li><a href="./contact.html">Contact</a></li>
                         </ul>
                     </nav>
@@ -86,6 +89,7 @@
                             <i class="fa fa-search" style="visibility: hidden;"></i>
                         </div>
                         <div class="to-social">
+                            <a href="https://www.facebook.com/mygymlahore/"><i class="fa fa-facebook"></i></a>
                             <a href="https://www.instagram.com/mygymlahore/"><i class="fa fa-instagram"></i></a>
                             <a href="https://wa.me/923344441455"><i class="fa fa-whatsapp"></i></a>
                             <a href="https://share.google/Ibi9AdcoL574vHIql"><i class="fa fa-map-marker"></i></a>
@@ -102,7 +106,7 @@
 
     <!-- Hero Section Begin -->
     <section class="hero-section">
-        <div class="hs-slider owl-carousel">
+        <div class="hs-slider owl-carousel hero-carousel">
             <div class="hs-item set-bg" data-setbg="img/hero/hero-1.jpg">
                 <div class="container">
                     <div class="row">
@@ -122,7 +126,7 @@
                             <div class="hi-text">
                                 <span>Shape your body</span>
                                 <h1>Be <strong>strong</strong> traning hard</h1>
-                                
+                                <a href="#" class="primary-btn">Get info</a>
                             </div>
                         </div>
                     </div>
@@ -163,7 +167,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="cs-item">
                         <span class="flaticon-002-dumbell"></span>
-                        <h4>Proffesponal training plan</h4>
+                        <h4>Professional training plan</h4>
                         <p>Get expert guidance from certified trainers who understand your body and goals. Our professional training plans are structured to maximize results, prevent injuries, 
                             and keep you motivated every step of the way.</p>
                     </div>
@@ -200,82 +204,127 @@
     </section>
     <!-- Banner Section End -->
 
-    <!-- Pricing Section Begin -->
+    
     <section class="pricing-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <span>Our Plan</span>
-                        <h2>Choose your pricing plan</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-8">
-                    <div class="ps-item">
-                        <h3>Indiviual </h3>
-                        <div class="pi-price">
-                            <h2>3500 PKR</h2>
-                            <span>+2000 PKR Registration fees</span>
-                        </div>
-                        <ul>
-                            <li>Gym Membeship</li>
-                            <li>Unlimited equipments</li>
-                            <li>General training</li>
-                            <li>Month to Month</li>
-                            <li>No time restriction</li>
-                            
-                        </ul>
-                        <a href="https://wa.me/923344441455" class="primary-btn pricing-btn">Enroll now</a>
-                        <!-- <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a> -->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-8">
-                    <div class="ps-item">
-                        <h3>Personal Traning</h3>
-                        <div class="pi-price">
-                            <h2>13500 PKR</h2>
-                            <span>+2000 PKR Registration fees</span>
-                        </div>
-                        <ul>
-                            <li>Gym Membeship</li>
-                            <li>Unlimited equipments</li>
-                            <li>Crossfit training</li>
-                            <li>Personal trainer</li>
-                           
-                            <li>Month to Month</li>
-                            <li>No time restriction</li>
-                            
-                        </ul>
-                        <a href="https://wa.me/923344441455" class="primary-btn pricing-btn">Enroll now</a>
-                        <!-- <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a> -->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-8">
-                    <div class="ps-item">
-                        <h3>6 Month Indiviual</h3>
-                        <div class="pi-price">
-                            <h2>18000 PKR</h2>
-                            <span>No Registration fees</span>
-                        </div>
-                        <ul>
-                            <li>Gym Membeship</li>
-                            <li>Unlimited equipments</li>
-                            
-                            <li>General training</li>
-                         
-                            <li>Month to Month</li> 
-                            <li>No time restriction</li>
-                        </ul>
-                        <a href="https://wa.me/923344441455" class="primary-btn pricing-btn">Enroll now</a>
-                        <!-- <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a> -->
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <span>Our Plan</span>
+                    <h2>Choose your pricing plan</h2>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Pricing Section End -->
+
+        <!-- Carousel Start -->
+        <div class="owl-carousel pricing-carousel">
+
+            <div class="ps-item">
+                <h3>Basic Flex</h3>
+                <div class="pi-price">
+                    <h2>3500 PKR</h2>
+                    <span>+2000 PKR Registration fees<br></span>
+                    <span>Cycle: Monthly</span>
+                </div>
+                <ul>
+                    <li>Gym Membership</li>
+                    <li>Unlimited equipments</li>
+                    <li>General training</li>
+                    <li>Crossfit training</li>
+                    <li>No time restriction</li>
+                </ul>
+                <a href="https://wa.me/923344441455" class="primary-btn pricing-btn">Enroll now</a>
+            </div>
+
+            <div class="ps-item">
+                <h3>Basic Flex Plus</h3>
+                <div class="pi-price">
+                    <h2>13500 PKR</h2>
+                    <span>+2000 PKR Registration fees<br></span>
+                    <span>Cycle: Monthly</span>
+                </div>
+                <ul>
+                    <li>Gym Membership</li>
+                    <li>Unlimited equipments</li>
+                    <li>Personal training</li>
+                    <li>Crossfit training</li>
+                    <li>No time restriction</li>
+                </ul>
+                <a href="https://wa.me/923344441455" class="primary-btn pricing-btn">Enroll now</a>
+            </div>
+
+            <div class="ps-item">
+                <h3>Power Start</h3>
+                <div class="pi-price">
+                    <h2>9000 PKR</h2>
+                    <span>+1000 PKR Registration fees<br></span>
+                    <span>Cycle: 3 Months</span>
+                </div>
+                <ul>
+                    <li>Gym Membership</li>
+                    <li>Unlimited equipments</li>
+                    <li>General training</li>
+                    <li>Crossfit training</li>
+                    <li>No time restriction</li>
+                </ul>
+                <a href="https://wa.me/923344441455" class="primary-btn pricing-btn">Enroll now</a>
+            </div>
+
+            <div class="ps-item">
+                <h3>Power Start Plus</h3>
+                <div class="pi-price">
+                    <h2>39000 PKR</h2>
+                    <span>+1000 PKR Registration fees<br></span>
+                    <span>Cycle: 3 Months</span>
+                </div>
+                <ul>
+                    <li>Gym Membership</li>
+                    <li>Unlimited equipments</li>
+                    <li>Personal training</li>
+                    <li>Crossfit training</li>
+                    <li>No time restriction</li>
+                </ul>
+                <a href="https://wa.me/923344441455" class="primary-btn pricing-btn">Enroll now</a>
+            </div>
+
+            <div class="ps-item">
+                <h3>Elite Transformation</h3>
+                <div class="pi-price">
+                    <h2>18000 PKR</h2>
+                    <span>No Registration fees<br></span>
+                    <span>Cycle: 6 Months</span>
+                </div>
+                <ul>
+                    <li>Gym Membership</li>
+                    <li>Unlimited equipments</li>
+                    <li>General training</li>
+                    <li>Crossfit training</li>
+                    <li>No time restriction</li>
+                </ul>
+                <a href="https://wa.me/923344441455" class="primary-btn pricing-btn">Enroll now</a>
+            </div>
+
+            <div class="ps-item">
+                <h3>Elite Transformation Plus</h3>
+                <div class="pi-price">
+                    <h2>68000 PKR</h2>
+                    <span>No Registration fees<br></span>
+                    <span>Cycle: 6 Months</span>
+                </div>
+                <ul>
+                    <li>Gym Membership</li>
+                    <li>Unlimited equipments</li>
+                    <li>Personal training</li>
+                    <li>Crossfit training</li>
+                    <li>No time restriction</li>
+                </ul>
+                <a href="https://wa.me/923344441455" class="primary-btn pricing-btn">Enroll now</a>
+            </div>
+        </div>
+        <!-- Carousel End -->
+    </div>
+</section>
+
 
     <!-- Gallery Section Begin -->
     <div class="gallery-section">
@@ -320,18 +369,20 @@
             <div class="row">
                 <div class="ts-slider owl-carousel">
                     <div class="col-lg-4">
-                        <div class="ts-item set-bg" data-setbg="img/team/waheed.jpg">
+                        <div class="ts-item set-bg" data-setbg="img/team/waheed2.jpg">
                             <div class="ts_text">
-                                <h4>Muhammad Waheed</h4>
+                                <h4>Waheed Khan</h4>
                                 <span>Owner</span>
+                                <span style="font-weight: 300;color: #aaaaaa;">20+ year experience</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="ts-item set-bg" data-setbg="img/team/team-2.jpg">
+                        <div class="ts-item set-bg" data-setbg="img/team/imran.jpg">
                             <div class="ts_text">
                                 <h4>Muhammad Imran</h4>
-                                <span>Gym Trainer</span>
+                                <span>Co Founder</span>
+                                <span style="font-weight: 300;color: #aaaaaa;">6+ year experience</span>
                             </div>
                         </div>
                     </div>
@@ -344,6 +395,17 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-4">
+                        <div class="ts-item set-bg" data-setbg="img/team/cross-234.jpg">
+                            <div class="ts_text">
+                                <h4>Tahir</h4>
+                                <span>Gym Trainer</span>
+                                <span style="font-weight: 300;color: #aaaaaa;">3+ year experience</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -387,14 +449,14 @@
                 <div class="col-lgo-4">
                     <div class="fs-about">
                         <div class="fa-logo">
-                            <a href="#"><img src="img/logo3.png" alt=""></a>
+                            <a href="./home.html"><img src="img/logo3.png" alt=""></a>
                         </div>
                         <p>At My Gym, we believe fitness is a lifestyle, not a phase.
                             Train with modern equipment, follow healthy routines, and stay motivated with expert guidance.
                             Every workout, every plan, and every goal is carefully designed around you.
                             Step in with dedication step out stronger, healthier, and more confident.</p>
                         <div class="fa-social">
-                            
+                            <a href="https://www.facebook.com/mygymlahore/"><i class="fa fa-facebook"></i></a>
                             <a href="https://www.instagram.com/mygymlahore/"><i class="fa fa-instagram"></i></a>
                             <a href="https://wa.me/923344441455"><i class="fa fa-whatsapp"></i></a>
                             <a href="https://share.google/Ibi9AdcoL574vHIql"><i class="fa fa-map-marker"></i></a>
@@ -437,9 +499,24 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.pricing-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                autoplay: true,
+                autoplayTimeout: 3500,
+                nav: true,
+                dots: false
+            });
+        });
+        </script>
 
 
 
 </body>
 
 </html>
+
+
+
